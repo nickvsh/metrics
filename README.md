@@ -90,7 +90,7 @@ Simply run image from [dockerhub](https://hub.docker.com/repository/docker/nickv
 
     docker run -it --rm --pid=host -v /etc/passwd:/etc/passwd nickvsh/metrics 
 
-##### shows shows help info
+##### shows help info
 
     docker run -it --rm --pid=host -v /etc/passwd:/etc/passwd nickvsh/metrics help
 
