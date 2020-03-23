@@ -86,5 +86,11 @@ OR
 
 Simply run image from dockerhub(https://hub.docker.com/repository/docker/nickvsh/metrics) like this:
 
-    sudo docker run -it --rm --pid=host -v /etc/passwd:/etc/passwd nickvsh/metrics # shows all available metrics
-    sudo docker run -it --rm --pid=host -v /etc/passwd:/etc/passwd nickvsh/metrics help # shows help info
+##### shows all available metrics
+
+    sudo docker run -it --rm --pid=host -v /etc/passwd:/etc/passwd nickvsh/metrics 
+
+##### shows shows help info
+
+    sudo docker run -it --rm --pid=host -v /etc/passwd:/etc/passwd nickvsh/metrics help
+
