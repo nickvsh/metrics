@@ -25,8 +25,8 @@ Mandatory arguments to long options are mandatory for short options too.
   ... to be continued
 ```
 
-CPU
----
+### CPU
+
 ```
 $ python3 metrics.py cpu
 
@@ -38,8 +38,8 @@ system.cpu.stolen 0.0
 system.cpu.system 131.74
 ```
 
-MEMORY
----
+### MEMORY
+
 ```
 $ python3 metrics.py mem
 
@@ -52,25 +52,21 @@ swap used 0
 swap free 595619840
 ```
 
-Installation
+Installation on Linux
 ==============
-
-Linux
-=====
 To install metrics.py just do the following:
 
-Ubuntu / Debian::
+**Ubuntu / Debian**
 
-    sudo apt install python3-pip python3-dev git
+    sudo apt-get install -y gcc python3 python3-pip python3-dev git
     pip3 install psutil
 
-RedHat / CentOS::
+**RedHat / CentOS**
 
-    sudo yum install gcc python3-pip python3-devel git
+    sudo yum install -y gcc python3 python3-pip python3-devel git
     pip3 install psutil
 
-Go Johnny go
-=====
+**Just Go Johnny go**
 
     git clone https://github.com/nickvsh/metrics.git ~/metrics 
     python3 ~/metrics/metrics.py --help
@@ -78,9 +74,8 @@ Go Johnny go
 
 Docker
 ==============
-
 For those who are familiar with docker.
-You can build the docker image from [Dockerfile](https://github.com/nickvsh/metrics/blob/master/Dockerfile) with 
+You can build the docker image from [Dockerfile](https://github.com/nickvsh/metrics/blob/master/Dockerfile) with:
     
     git clone https://github.com/nickvsh/metrics.git ~/metrics
     cd ~/metrics
@@ -89,6 +84,7 @@ You can build the docker image from [Dockerfile](https://github.com/nickvsh/metr
     
 OR
 
-Simply use image from dockerhub
-   
-    sudo docker run -it --rm --pid=host -v /etc/passwd:/etc/passwd nickvsh/metrics 
+Simply run image from dockerhub(https://hub.docker.com/repository/docker/nickvsh/metrics) like this:
+
+    sudo docker run -it --rm --pid=host -v /etc/passwd:/etc/passwd nickvsh/metrics # shows all available metrics
+    sudo docker run -it --rm --pid=host -v /etc/passwd:/etc/passwd nickvsh/metrics help # shows help info
