@@ -88,9 +88,9 @@ Simply run image from [dockerhub](https://hub.docker.com/repository/docker/nickv
 
 ##### shows all available metrics
 
-    sudo docker run -it --rm --pid=host -v /etc/passwd:/etc/passwd nickvsh/metrics 
+    docker run -it --rm --pid=host -v /etc/passwd:/etc/passwd nickvsh/metrics 
 
 ##### shows shows help info
 
-    sudo docker run -it --rm --pid=host -v /etc/passwd:/etc/passwd nickvsh/metrics help
+    docker run -it --rm --pid=host -v /etc/passwd:/etc/passwd nickvsh/metrics help
 
