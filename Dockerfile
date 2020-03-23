@@ -6,6 +6,6 @@ ENV PYTHONUNBUFFERED=1
 
 RUN apk add gcc git python3 python3-dev linux-headers libc-dev
 RUN pip3 install --upgrade pip psutil
-RUN git clone https://github.com/nickvsh/test.git ~/metrics
+RUN git clone https://github.com/nickvsh/metrics.git ~/metrics
 ENTRYPOINT ["python3","/root/metrics/metrics.py"]
 CMD ["all"]
