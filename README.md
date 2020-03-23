@@ -84,7 +84,7 @@ You can build the docker image from [Dockerfile](https://github.com/nickvsh/metr
     
 OR
 
-Simply run image from dockerhub(https://hub.docker.com/repository/docker/nickvsh/metrics) like this:
+Simply run image from [dockerhub](https://hub.docker.com/repository/docker/nickvsh/metrics) like this:
 
 ##### shows all available metrics
 
